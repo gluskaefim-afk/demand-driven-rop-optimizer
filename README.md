@@ -1,5 +1,8 @@
 An automated inventory model that calibrates the Reorder Point (ROP) for a single SKU by combining Prophet demand forecasting, EOQ calculation, and a day-by-day Monte Carlo / Bootstrap simulation of the inventory system.
 
+<img width="1280" height="864" alt="Simple_Architecture" src="https://github.com/user-attachments/assets/c7ab8668-db0d-40ad-a331-98e88e65784d" />
+
+
 ### What the model does
 
 1. **Forecast** — a Prophet model is fit on daily demand to estimate total demand over the next 31 days (`yhat`, with `yhat_lower`/`yhat_upper` bounds). This forecast is used only to (a) size the EOQ order quantity and (b) identify historical periods with a comparable demand pattern — it is *not* sampled from directly.
