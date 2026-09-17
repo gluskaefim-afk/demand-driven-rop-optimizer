@@ -16,7 +16,7 @@ The model reports three distinct numbers, each answering a different question:
 
 | Metric | Question it answers |
 |---|---|
-| **Cycle Service Level (99.9th percentile)** | In a near-worst-case month, what fraction of days is the system stocked out on? |
+| **Cycle Service Level** | In a near-worst-case month, what fraction of days is the system stocked out on? |
 | **Fill Rate** (aggregated across all 1,000 simulations) | Over long-run operation, what fraction of total demand is served directly from stock? |
 | **Average cost** | What is the expected holding + ordering cost per month at this ROP? |
  
