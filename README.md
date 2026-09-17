@@ -31,7 +31,7 @@ The model optimizes for **resilience to demand variability**, not average-case c
 - Lead time is treated as fixed and deterministic, not itself stochastic.
 - The historical-period selection step (`yhat_lower — yhat_upper` filtering) is currently precomputed and hardcoded as a fixed list of months in this notebook rather than recomputed inline — full reproducibility requires re-running that filtering step if the underlying dataset changes.
 - Dataset used for demonstration is synthetically generated, not production data.
-- 
+  
 ### Stack
 
 `pandas`, `numpy`, `prophet`, `matplotlib`
